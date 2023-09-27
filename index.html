@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keno Számhúzási Statisztika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keno Számhúzási Statisztika</h1>
+        <div>
+            <input type="file" id="csv-file" accept=".csv">
+            <button onclick="handleFile()">Feltöltés</button>
+        </div>
+        <div class="stats">
+            <h2>Számok gyakorisága</h2>
+            <ul id="number-frequencies"></ul>
+        </div>
+        <div class="stats">
+            <h2>Leggyakrabban húzott 10 szám</h2>
+            <ul id="most-common-numbers"></ul>
+        </div>
+        <div class="stats">
+            <h2>Legritkábban húzott 10 szám</h2>
+            <ul id="least-common-numbers"></ul>
+        </div>
+        <div class="stats">
+            <h2>Leggyakrabban együtt húzott 5 szám</h2>
+            <ul id="most-common-combinations"></ul>
+        </div>
+        <div class="stats">
+            <h2>Legritkábban együtt húzott 5 szám</h2>
+            <ul id="least-common-combinations"></ul>
+        </div>
+        <div class="stats">
+            <h2>Első 10 húzás</h2>
+            <ul id="first-10-draws"></ul>
+        </div>
+        <div class="stats">
+            <h2>Utolsó 10 húzás</h2>
+            <ul id="last-10-draws"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
